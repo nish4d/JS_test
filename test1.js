@@ -27,7 +27,7 @@ console.log("One line = "+ (variable1+variable2));
 
 var number1 = 119;
 var number2 = 5;
-console.log("reminder = "+ (119%5))
+console.log("reminder = " + (119%5));
 
 
 
