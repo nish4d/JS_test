@@ -48,7 +48,49 @@ const array2 = [2, 4, 6, 8];
 
 const results = findMaxNumber(array1, array2);
 
-console.log(results);
+// console.log(results);
+
+// problem 2
+const friends = friend => {
+  let total = [];
+  for (const friends of friend) {
+      if(friends.length%2 == 0 ){
+          total.push(friends);
+      }
+  }
+  return total;
+};
+const friendNames = ["Alice", "Bobs", "Charlie", "David", "Emily"];
+// console.log(...friendNames)
+const result = friends(friendNames);
+// console.log(...result);
+
+// problem 3
+const arrow = (number) => {
+  let sum = 0;
+  
+  for(const numbers of number){
+      const square = Math.pow(numbers, 2);
+      // console.log(square);
+      sum += square;
+  }
+  const allTotal = sum/number.length;
+  return allTotal;
+}
+const arr = [1, 2, 3, 4, 5, 6, 7]
+const total = arrow(arr);
+// console.log(total);
+
+// problem 4
+const twoInputs = (num1,num2) => {
+  const combine = num1;
+  combine.push(...num2);
+  return combine;
+}
+const arr1 = [1, 2, 3, 4, 5, 6];
+const arr2 = [7, 8, 9, 10, 11, 12];
+const totals = twoInputs(arr1, arr2);
+// console.log(totals);
 
     
     
